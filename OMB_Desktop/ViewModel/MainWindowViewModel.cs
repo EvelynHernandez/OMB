@@ -74,7 +74,8 @@ namespace OMB_Desktop.ViewModel
       {
         DisplayLogin.Raise(new Notification() { Title = "Ingreso al sistema" }, LoginTerminado);
       }, CanLogin);
-
+        
+            //RELAY COMMAND hay q decirle la accion que hace el comando
       Logout = new RelayCommand(() =>
       {
         SecurityServices serv = new SecurityServices(null);
